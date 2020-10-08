@@ -7,6 +7,7 @@ mresdict = {'A0': 0,'A1': 2,'A2': 2,'V': 1}
 
 # resonance masses used in 2007.06957 (table XV); (pseudoscalar, vector and axial, in this order) 
 
+mres_bc ={}
 mres_bc[0] = [6.275, 6.872, 7.25]
 mres_bc[1] = [6.335, 6.926, 7.02, 7.28]
 mres_bc[2] = [6.745, 6.75, 7.15, 7.15]
