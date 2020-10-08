@@ -3,7 +3,7 @@ from flavio.classes import AuxiliaryQuantity, Implementation
 from flavio.config import config
 
 processes_H2L = ['B->K*', 'B->rho', 'B->omega', 'Bs->phi', 'Bs->K*']  # heavy to light
-processes_H2H = ['B->D*', ]  # heavy to heavy
+processes_H2H = ['B->D*', 'Bc->psi']  # heavy to heavy
 
 
 def ff_function(function, process, **kwargs):
@@ -44,3 +44,8 @@ for p in processes_H2H:
     i.set_description("CLN-like parametrization as used by B factories"
                       " and using improved Isgur-Wise relations"
                       " for the tensor form factors")
+
+    iname = p + ' SSEbc'
+    i = Implementation(name=iname, quantity=quantity,
+                   function=ff_function(sse_bc.ff, p, scale=config['renormalization scale']['bvll']))
+    i.set_description("4- parameter simplified series expansion (see arXiv:2007.06957) ")
