@@ -1,9 +1,9 @@
-from flavio.physics.bdecays.formfactors.b_v import bsz, sse, cln, clnexp
+from flavio.physics.bdecays.formfactors.b_v import bsz, sse, cln, clnexp, sse_bc
 from flavio.classes import AuxiliaryQuantity, Implementation
 from flavio.config import config
 
 processes_H2L = ['B->K*', 'B->rho', 'B->omega', 'Bs->phi', 'Bs->K*']  # heavy to light
-processes_H2H = ['B->D*', 'Bc->psi']  # heavy to heavy
+processes_H2H = ['B->D*', 'Bc->J/psi']  # heavy to heavy
 
 
 def ff_function(function, process, **kwargs):
