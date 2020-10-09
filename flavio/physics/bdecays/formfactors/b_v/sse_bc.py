@@ -2,6 +2,9 @@ from math import sqrt
 import numpy as np
 from flavio.physics.bdecays.formfactors.common import z
 
+process_dict = {}
+process_dict['Bc->J/psi'] =  {'B': 'Bc', 'V': 'J/psi',  'q': 'b->c'}
+
 # dictionary for resonance masses for the different form factors
 mresdict = {'A0': 0,'A1': 2,'A2': 2,'V': 1}
 
@@ -22,10 +25,7 @@ def Ppole(ff,q2):
     mpole = mres_bc[mresdict[ff]]
     return np.prod([z(par['m_B'], par['m_D*+'],q2,mp**2) for mp in mpole])
 
-process_dict = {}
-process_dict['Bc->J/psi'] =  {'B': 'Bc', 'V': 'J/psi',  'q': 'b->c'}
-
-def ffBc( q2, par, n=4):
+def ff(process, q2, par, n=4):
     r"""Central value of $Bc\to J/Psi$ form factors in the lattice convention
     and simplified series expansion (SSEbc) parametrization.
 
@@ -43,6 +43,6 @@ def ffBc( q2, par, n=4):
     ff = {}
 
     for i in ["A0","A1","A2","V"]:
-        a = [ par['Bc->J/psi' + ' SSEbc ' + i.lower() + '_' + 'a' + str(j)] for j in range(n) ]
+        a = [ par[process + ' SSEbc ' + 'a' + str(j) + '_' + i] for j in range(n) ]
         ff[i] = Ppole(i, q2)*np.dot(a, zs(mB, mV, q2, t0=(mB-mV)**2)[:n])
     return ff

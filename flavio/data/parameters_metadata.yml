@@ -1048,6 +1048,58 @@ D->K BCL m+:
   tex: $m_{D^*}^{f_+}$
   description: Resonance mass for the $D\to K$ vector and tensor form factors in BCL parametrization
 
+
+# Parameters for Bc->J/Psi form factors in the Simplified Series Expansion (SSE)bc parametrization used by HPQCD
+Bc->J/psi SSEbc a0_A0:
+  tex: $a_{0}^{A_0}$
+  description: SSEbc form factor parametrization coefficient $a_0$ of A0
+Bc->J/psi SSEbc a1_A0:
+  tex: $a_{1}^{A_0}$
+  description: SSEbc form factor parametrization coefficient $a_1$ of A0
+Bc->J/psi SSEbc a2_A0:
+  tex: $a_{2}^{A_0}$
+  description: SSEbc form factor parametrization coefficient $a_2$ of A0
+Bc->J/psi SSEbc a3_A0:
+  tex: $a_{3}^{A_0}$
+  description: SSEbc form factor parametrization coefficient $a_3$ of A0
+Bc->J/psi SSEbc a0_A1:
+  tex: $a_{0}^{A_1}$
+  description: SSEbc form factor parametrization coefficient $a_0$ of A1
+Bc->J/psi SSEbc a1_A1:
+  tex: $a_{1}^{A_1}$
+  description: SSEbc form factor parametrization coefficient $a_1$ of A1
+Bc->J/psi SSEbc a2_A1:
+  tex: $a_{2}^{A_1}$
+  description: SSEbc form factor parametrization coefficient $a_2$ of A1
+Bc->J/psi SSEbc a3_A1:
+  tex: $a_{3}^{A_1}$
+  description: SSEbc form factor parametrization coefficient $a_3$ of A1
+Bc->J/psi SSEbc a0_A2:
+  tex: $a_{0}^{A_2}$
+  description: SSEbc form factor parametrization coefficient $a_0$ of A2
+Bc->J/psi SSEbc a1_A2:
+  tex: $a_{1}^{A_2}$
+  description: SSEbc form factor parametrization coefficient $a_1$ of A2
+Bc->J/psi SSEbc a2_A2:
+  tex: $a_{2}^{A_2}$
+  description: SSEbc form factor parametrization coefficient $a_2$ of A2
+Bc->J/psi SSEbc a3_A2:
+  tex: $a_{3}^{A_2}$
+  description: SSEbc form factor parametrization coefficient $a_3$ of A2
+Bc->J/psi SSEbc a0_V:
+  tex: $a_{0}^{V}$
+  description: SSEbc form factor parametrization coefficient $a_0$ of V
+Bc->J/psi SSEbc a1_V:
+  tex: $a_{1}^{V}$
+  description: SSEbc form factor parametrization coefficient $a_1$ of V
+Bc->J/psi SSEbc a2_V:
+  tex: $a_{2}^{V}$
+  description: SSEbc form factor parametrization coefficient $a_2$ of V
+Bc->J/psi SSEbc a3_V:
+  tex: $a_{3}^{V}$
+  description: SSEbc form factor parametrization coefficient $a_3$ of V
+
+
 # Experimental data needed for the normalization of BR(B->Xqgamma) and BR(B->Xqll)
 C_BXlnu:
   tex: $C$
