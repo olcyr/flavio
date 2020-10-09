@@ -55,6 +55,7 @@ meson_spectator = {
 ('B+','K*+'): 'u',
 ('B0','K*0'): 'd',
 ('Bs','phi'): 's',
+('Bc','J/psi'): 'c',
 }
 
 quark_charge = {
@@ -87,6 +88,7 @@ meson_ff = {
 ('B+','D0'): 'B->D',
 ('B0','D*+'): 'B->D*',
 ('B+','D*0'): 'B->D*',
+('Bc','J/psi'): 'Bc->J/psi',
 ('B0','pi+'): 'B->pi',
 ('B+','pi0'): 'B->pi',
 ('B0','pi0'): 'B->pi',
