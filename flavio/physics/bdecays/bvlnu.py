@@ -532,6 +532,7 @@ _hadr = {
 'B+->rho': {'tex': r"B^+\to \rho^0", 'B': 'B+', 'V': 'rho0', },
 'B+->omega': {'tex': r"B^+\to \omega ", 'B': 'B+', 'V': 'omega', },
 'Bs->K*': {'tex': r"B_s\to K^{* -} ", 'B': 'Bs', 'V': 'K*+', },
+'Bc->J/psi': {'tex': r"B_c\to J/\psi ", 'B': 'Bc', 'V': 'J/psi', },
 }
 # for LF ratios we don't distinguish B+ and B0 (but take B0 because we have to choose sth)
 _hadr_l = {
