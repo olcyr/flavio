@@ -1,3 +1,6 @@
+### TODO: fix the functions that call mesons masses; par not defined.
+###
+
 from math import sqrt
 import numpy as np
 from flavio.physics.bdecays.formfactors.common import z
@@ -20,7 +23,7 @@ def zs_bc(q2,t0):
     zq2 = z(par['m_B'], par['m_D*+'], q2, t0)
     return np.array([1, zq2, zq2**2, zq2**3, zq2**4])
 
-# pole function P(q^2), see Eq.(26) of 2007.06957 
+# pole function P(q^2) for Bc->J/psi, see Eq.(26) of 2007.06957 
 def Ppole(ff,q2):
     mpole = mres_bc[mresdict[ff]]
     return np.prod([z(par['m_B'], par['m_D*+'],q2,mp**2) for mp in mpole])
@@ -37,8 +40,8 @@ def ff(process, q2, par, n=4):
     where $P_i(q^2)= \prod_{poles} z(q^2,m^2_{pole})$ is a simple pole.
     """
  
-    mB = par['m_'+pd['B']]
-    mV = par['m_'+pd['V']]
+    mB = par['m_' + pd['B']]
+    mV = par['m_' + pd['V']]
     tm = (mB-mV)**2.
     ff = {}
 
