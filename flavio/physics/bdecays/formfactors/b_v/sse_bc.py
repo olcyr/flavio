@@ -47,5 +47,5 @@ def ff(process, q2, par, n=4):
 
     for i in ["A0","A1","A2","V"]:
         a = [ par[process + ' SSEbc ' + 'a' + str(j) + '_' + i] for j in range(n) ]
-        ff[i] = Ppole(i, q2)*np.dot(a, zs(mB, mV, q2, t0=(mB-mV)**2)[:n])
+        ff[i] = Ppole(i, q2)*np.dot(a, zs_bc(q2, t0=(mB-mV)**2)[:n])
     return ff
