@@ -540,6 +540,7 @@ _hadr_l = {
 'B->rho': {'tex': r"B\to \rho", 'B': 'B0', 'V': 'rho+', 'decays': ['B0->rho', 'B+->rho'],},
 'B+->omega': {'tex': r"B^+\to \omega ", 'B': 'B+', 'V': 'omega', 'decays': ['B+->omega'],},
 'Bs->K*': {'tex': r"B_s\to K^{* -} ", 'B': 'Bs', 'V': 'K*+', 'decays': ['Bs->K*'],},
+'Bc->J/psi': {'tex': r"B_c\to J/\psi ", 'B': 'Bc', 'V': 'J/psi', 'decays': ['Bc->J/psi'],},
 }
 
 _process_taxonomy = r'Process :: $b$ hadron decays :: Semi-leptonic tree-level decays :: $B\to V\ell\nu$ :: $'
